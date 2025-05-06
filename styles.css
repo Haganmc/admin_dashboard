@@ -13,7 +13,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(100px, 300px) repeat(11, 1fr);
+    grid-template-columns: minmax(100px, 350px) repeat(11, 1fr);
     grid-template-rows: repeat(12, 1fr);
     height: 100%;
 }
@@ -43,4 +43,155 @@ aside {
     grid-column: 9 / 13;
     grid-row: 3 / 13;
     background-color: rgb(229, 231, 235);
+}
+
+nav .top {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr;
+    margin: 20px 0 40px 20px;
+    gap: 10px;
+}
+nav .top > img {
+    filter: invert();
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+nav .top > span {
+    grid-column: 2 / 3;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+nav .nav, nav .settings {
+    list-style: none;
+}
+
+nav .nav a, nav .settings a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav ul img {
+    filter: invert();
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: .35fr 3fr;
+    grid-template-areas:
+    "home-icon home"
+    "profile-icon profile"
+    "message-icon messages"
+    "history-icon history"
+    "task-icon task"
+    "community-icon community";
+    margin: 20px 0 40px 20px;
+    gap: 20px;
+    padding-left: 0.8rem;
+}
+
+.nav #home-icon {
+    grid-area: home-icon;
+    width: 100%;
+}
+
+.nav #home {
+    grid-area: home;
+    align-self: center;
+}
+
+.nav #profile-icon {
+    grid-area: profile-icon;
+    width: 100%;
+}
+
+.nav #profile {
+    grid-area: profile;
+    align-self: center;
+}
+
+.nav #message-icon {
+    grid-area: message-icon;
+    width: 100%;
+}
+
+.nav #messages {
+    grid-area: messages;
+    align-self: center;
+}
+
+.nav #history-icon {
+    grid-area: history-icon;
+    width: 100%;
+}
+
+.nav #history {
+    grid-area: history;
+    align-self: center;
+}
+
+.nav #task-icon {
+    grid-area: task-icon;
+    width: 100%;
+}
+
+.nav #task {
+    grid-area: task;
+    align-self: center;
+}
+
+.nav #community-icon {
+    grid-area: community-icon;
+    width: 100%;
+}
+
+.nav #community {
+    grid-area: community;
+    align-self: center;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: .35fr 3fr;
+    grid-template-areas:
+    "settings-icon settings"
+    "support-icon support"
+    "privacy-icon privacy";
+    margin: 80px 0 40px 20px;
+    gap: 20px;
+    padding-left: 0.8rem;
+}
+
+.settings #settings-icon {
+    grid-area: settings-icon;
+    width: 100%;
+}
+
+.settings #settings {
+    grid-area: settings;
+    align-self: center;
+}
+
+.settings #support-icon {
+    grid-area: support-icon;
+    width: 100%;
+}
+
+.settings #support {
+    grid-area: support;
+    align-self: center;
+}
+
+.settings #privacy-icon {
+    grid-area: privacy-icon;
+    width: 100%;
+}
+
+.settings #privacy {
+    grid-area: privacy;
+    align-self: center;
 }
