@@ -288,7 +288,7 @@ header .user-profile {
 header .user-profile img {
     width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
     object-fit: contain;
     border-radius: 50%;
     border: none;
