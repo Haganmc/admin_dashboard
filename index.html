@@ -8,7 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <header>Header</header>
+        <header>
+          <div class="search">
+            <img src="./assets/icons/magnify.svg" alt="search-icon">
+            <input type="text">
+          </div>
+          <div class="user">
+            <img src="./assets/icons/bell-ring-outline.svg" alt="notification-icon" id="notification">
+            <img src="./assets/imgs/cat.png" alt="cat logo" id="logo">
+            <p>Morgan Oakley</p>
+          </div>
+          <div class="user-profile">
+            <img src="./assets/imgs/cat.png" alt="">
+            <p>Hi there,<br><br><span>Morgan Oakley (@morgan)</span></p>
+          </div>
+          <div class="buttons">
+            <button id="new">New</button>
+            <button id="upload">Upload</button>
+            <button id="share">Share</button>
+          </div>
+        </header>
         <nav>
             <div class="top">
                 <img src="./assets/icons/view-dashboard.svg" alt="dashboard logo">
@@ -38,8 +57,95 @@
             </ul>
 
         </nav>
-        <main>Your Projects</main>
-        <aside>Other</aside>
+        <main class="main-container">
+            <section class="project-section">
+                <h2>Your Projects</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae laudantium quibusdam nemo sit! Illum quasi assumenda, hic eos sint doloribus quia veniam ipsum, praesentium laudantium explicabo a neque placeat.
+                        </p>
+                        <div class="functions">
+                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite-icon" id="favorite">
+                            <img src="./assets/icons/eye-plus-outline.svg" alt="follow-icon" id="follow">
+                            <img src="./assets/icons/source-fork.svg" alt="link-icon" class="link">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Less Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti voluptas provident. Debitis voluptatem deleniti eveniet ipsa? Error ratione unde optio aperiam sed qui quae dolorem, molestiae a quam earum.</p>
+                        <div class="functions">
+                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite-icon" id="favorite">
+                            <img src="./assets/icons/eye-plus-outline.svg" alt="follow-icon" id="follow">
+                            <img src="./assets/icons/source-fork.svg" alt="link-icon" class="link">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi harum quisquam laudantium soluta id unde autem repudiandae molestias in nulla qui, ipsam, mollitia nam ratione, nisi beatae consequuntur impedit minima.</p>
+                        <div class="functions">
+                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite-icon" id="favorite">
+                            <img src="./assets/icons/eye-plus-outline.svg" alt="follow-icon" id="follow">
+                            <img src="./assets/icons/source-fork.svg" alt="link-icon" class="link">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Molestias facere officia suscipit asperiores repellendus alias quia reprehenderit voluptate, ea at vero commodi, odit atque est nemo facilis distinctio sed dolorum!</p>
+                        <div class="functions">
+                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite-icon" id="favorite">
+                            <img src="./assets/icons/eye-plus-outline.svg" alt="follow-icon" id="follow">
+                            <img src="./assets/icons/source-fork.svg" alt="link-icon" class="link">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="articles-section">
+                <div class="announcements-section">
+                    <h2>Announcements</h2>
+                    <div class="announcements">
+                        <div class="announcement">
+                            <h3>Site Maintenance</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                        </div>
+                        <div class="announcement">
+                            <h3>Community Share Day</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                        </div>
+                        <div class="announcement">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-section">
+                    <h2>Trending</h2>
+                    <div class="trending">
+                        <div class="trending-user">
+                            <img src="./assets/imgs/leopard.png" alt="cat logo">
+                            <h3>@teagan</h3>
+                            <p>World Peace Builder</p>
+                        </div>
+                        <div class="trending-user">
+                            <img src="./assets/imgs/cat.png" alt="cat logo">
+                            <h3>@morgan</h3>
+                            <p>Super Cool Project</p>
+                        </div>
+                        <div class="trending-user">
+                            <img src="./assets/imgs/spiderman.png" alt="cat logo">
+                            <h3>@kendall</h3>
+                            <p>Life Changing App</p>
+                        </div>
+                        <div class="trending-user">
+                            <img src="./assets/imgs/penguin.png" alt="cat logo">
+                            <h3>@alex</h3>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
     </div>
 </body>
 </html>
