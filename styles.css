@@ -283,6 +283,7 @@ header .user-profile {
     grid-template-columns: .1fr 1fr;
     gap: 20px;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 header .user-profile img {
